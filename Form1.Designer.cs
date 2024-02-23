@@ -64,6 +64,7 @@
             this.button_dowload.TabIndex = 0;
             this.button_dowload.Text = "Загрузить";
             this.button_dowload.UseVisualStyleBackColor = true;
+            this.button_dowload.Click += new System.EventHandler(this.button_dowload_Click);
             // 
             // button_add
             // 
@@ -73,6 +74,7 @@
             this.button_add.TabIndex = 1;
             this.button_add.Text = "Добавить";
             this.button_add.UseVisualStyleBackColor = true;
+            this.button_add.Click += new System.EventHandler(this.button_add_Click);
             // 
             // button_res
             // 
@@ -82,6 +84,7 @@
             this.button_res.TabIndex = 2;
             this.button_res.Text = "Обновить";
             this.button_res.UseVisualStyleBackColor = true;
+            this.button_res.Click += new System.EventHandler(this.button_res_Click);
             // 
             // button_del
             // 
@@ -91,6 +94,7 @@
             this.button_del.TabIndex = 3;
             this.button_del.Text = "Удалить";
             this.button_del.UseVisualStyleBackColor = true;
+            this.button_del.Click += new System.EventHandler(this.button_del_Click);
             // 
             // dataGridView1
             // 
@@ -104,6 +108,7 @@
             this.column_3});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(800, 395);
             this.dataGridView1.TabIndex = 1;
