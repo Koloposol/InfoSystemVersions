@@ -112,6 +112,7 @@
             // 
             this.id.HeaderText = "Id";
             this.id.Name = "id";
+            this.id.ReadOnly = true;
             // 
             // column_1
             // 
