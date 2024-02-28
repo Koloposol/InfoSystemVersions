@@ -203,5 +203,47 @@ namespace InfoSystemVersions
             //Удаляем данные из бд
             DeleteData();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void загрузитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Отчищаем таблицу
+            dataGridView1.Rows.Clear();
+
+            //Загружаем бд
+            LoadDb();
+        }
+
+        private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Добавляем данные в бд
+            AddData();
+        }
+
+        private void обновитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Изменяем данные в бд
+            UpdateData();
+        }
+
+        private void удалитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Удаляем данные из бд
+            DeleteData();
+        }
+
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Информационная система", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
