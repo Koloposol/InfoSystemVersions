@@ -28,77 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button_dowload = new System.Windows.Forms.Button();
-            this.button_add = new System.Windows.Forms.Button();
-            this.button_res = new System.Windows.Forms.Button();
-            this.button_del = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1.SuspendLayout();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button_del = new System.Windows.Forms.Button();
+            this.button_res = new System.Windows.Forms.Button();
+            this.button_add = new System.Windows.Forms.Button();
+            this.button_dowload = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.button_del);
-            this.groupBox1.Controls.Add(this.button_res);
-            this.groupBox1.Controls.Add(this.button_add);
-            this.groupBox1.Controls.Add(this.button_dowload);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(0, 395);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(800, 55);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Действия";
-            // 
-            // button_dowload
-            // 
-            this.button_dowload.Location = new System.Drawing.Point(12, 20);
-            this.button_dowload.Name = "button_dowload";
-            this.button_dowload.Size = new System.Drawing.Size(75, 23);
-            this.button_dowload.TabIndex = 0;
-            this.button_dowload.Text = "Загрузить";
-            this.button_dowload.UseVisualStyleBackColor = true;
-            this.button_dowload.Click += new System.EventHandler(this.button_dowload_Click);
-            // 
-            // button_add
-            // 
-            this.button_add.Location = new System.Drawing.Point(93, 20);
-            this.button_add.Name = "button_add";
-            this.button_add.Size = new System.Drawing.Size(75, 23);
-            this.button_add.TabIndex = 1;
-            this.button_add.Text = "Добавить";
-            this.button_add.UseVisualStyleBackColor = true;
-            this.button_add.Click += new System.EventHandler(this.button_add_Click);
-            // 
-            // button_res
-            // 
-            this.button_res.Location = new System.Drawing.Point(174, 20);
-            this.button_res.Name = "button_res";
-            this.button_res.Size = new System.Drawing.Size(75, 23);
-            this.button_res.TabIndex = 2;
-            this.button_res.Text = "Обновить";
-            this.button_res.UseVisualStyleBackColor = true;
-            this.button_res.Click += new System.EventHandler(this.button_res_Click);
-            // 
-            // button_del
-            // 
-            this.button_del.Location = new System.Drawing.Point(255, 20);
-            this.button_del.Name = "button_del";
-            this.button_del.Size = new System.Drawing.Size(75, 23);
-            this.button_del.TabIndex = 3;
-            this.button_del.Text = "Удалить";
-            this.button_del.UseVisualStyleBackColor = true;
-            this.button_del.Click += new System.EventHandler(this.button_del_Click);
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightCyan;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -112,6 +59,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(800, 395);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // id
             // 
@@ -134,20 +82,87 @@
             this.column_3.HeaderText = "Column3";
             this.column_3.Name = "column_3";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox1.Controls.Add(this.button_del);
+            this.groupBox1.Controls.Add(this.button_res);
+            this.groupBox1.Controls.Add(this.button_add);
+            this.groupBox1.Controls.Add(this.button_dowload);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(0, 395);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(800, 55);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Действия";
+            // 
+            // button_del
+            // 
+            this.button_del.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_del.Location = new System.Drawing.Point(255, 20);
+            this.button_del.Name = "button_del";
+            this.button_del.Size = new System.Drawing.Size(75, 23);
+            this.button_del.TabIndex = 3;
+            this.button_del.Text = "Удалить";
+            this.button_del.UseVisualStyleBackColor = true;
+            this.button_del.Click += new System.EventHandler(this.button_del_Click);
+            // 
+            // button_res
+            // 
+            this.button_res.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_res.Location = new System.Drawing.Point(174, 20);
+            this.button_res.Name = "button_res";
+            this.button_res.Size = new System.Drawing.Size(75, 23);
+            this.button_res.TabIndex = 2;
+            this.button_res.Text = "Обновить";
+            this.button_res.UseVisualStyleBackColor = true;
+            this.button_res.Click += new System.EventHandler(this.button_res_Click);
+            // 
+            // button_add
+            // 
+            this.button_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_add.Location = new System.Drawing.Point(93, 20);
+            this.button_add.Name = "button_add";
+            this.button_add.Size = new System.Drawing.Size(75, 23);
+            this.button_add.TabIndex = 1;
+            this.button_add.Text = "Добавить";
+            this.button_add.UseVisualStyleBackColor = true;
+            this.button_add.Click += new System.EventHandler(this.button_add_Click);
+            // 
+            // button_dowload
+            // 
+            this.button_dowload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_dowload.Location = new System.Drawing.Point(12, 20);
+            this.button_dowload.Name = "button_dowload";
+            this.button_dowload.Size = new System.Drawing.Size(75, 23);
+            this.button_dowload.TabIndex = 0;
+            this.button_dowload.Text = "Загрузить";
+            this.button_dowload.UseVisualStyleBackColor = true;
+            this.button_dowload.Click += new System.EventHandler(this.button_dowload_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Информационная система";
-            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

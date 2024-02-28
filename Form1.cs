@@ -203,5 +203,10 @@ namespace InfoSystemVersions
             //Удаляем данные из бд
             DeleteData();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
