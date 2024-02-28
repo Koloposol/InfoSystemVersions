@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1666402169_4-mykaleidoscope-ru-p-krasno-oranzhevii-krasivo-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1644923633_1-www-funnyart-club-p-avp-fon-krasivo-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f08371b6-4ece-48c7-89c6-df23be1ff096_1613149535430.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\counter-strike-counter-strike-global-offensive-awp-azimov-guns-dragon-lore-counter-strike-wallpaper-9950284d414a1d8b0607c85f00d1a65d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1636390141_74-bigfoto-name-p-neitralnii-sinii-fon-81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1613304550_193-p-sinii-obemnii-fon-243.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1636390141_74-bigfoto-name-p-neitralnii-sinii-fon-811.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinij-fon-s-volnistym-svecheniem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1666158767_61-mykaleidoscope-ru-p-belii-kamuflyazh-oboi-66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9254b9ea68eca665627f4aec16527d7a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1660129053_26-kartinkin-net-p-goluboi-fon-karandashom-krasivo-27.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
