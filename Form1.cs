@@ -177,6 +177,58 @@ namespace InfoSystemVersions
             }
         }
 
+        private void SetLocalizationEnglish()
+        {
+            button_add.Text = "Add";
+            button_del.Text = "Delete";
+            button_res.Text = "Update";
+            button_dowload.Text = "Import";
+
+            менюToolStripMenuItem1.Text = "Menu";
+            выходToolStripMenuItem.Text = "Exit";
+            менюToolStripMenuItem.Text = "Operations";
+            загрузитьToolStripMenuItem.Text = "Import";
+            добавитьToolStripMenuItem.Text = "Add";
+            обновитьToolStripMenuItem.Text = "Update";
+            удалитьToolStripMenuItem.Text = "Delete";
+
+            настройкиToolStripMenuItem.Text = "Settings";
+            языкToolStripMenuItem.Text = "Languege";
+            темаToolStripMenuItem.Text = "Theme";
+            светлаяToolStripMenuItem.Text = "Light";
+            темнаяToolStripMenuItem.Text = "Dark";
+
+            оПрограммеToolStripMenuItem.Text = "About";
+            message = "Kalashnikov Group Information System, 2024.\nVesion: 1.2.0v\nAuthors: Мусатов И., Столяров А., Ломакин Е.";
+            caption = "About";
+        }
+
+        private void SetLocalizationRussia()
+        {
+            button_add.Text = "Добавить";
+            button_del.Text = "Удалить";
+            button_res.Text = "Обновить";
+            button_dowload.Text = "Загрузить";
+
+            менюToolStripMenuItem1.Text = "Меню";
+            выходToolStripMenuItem.Text = "Выход";
+            менюToolStripMenuItem.Text = "Действия";
+            загрузитьToolStripMenuItem.Text = "Загрузить";
+            добавитьToolStripMenuItem.Text = "Добавить";
+            обновитьToolStripMenuItem.Text = "Обновить";
+            удалитьToolStripMenuItem.Text = "Удалить";
+
+            настройкиToolStripMenuItem.Text = "Настройки";
+            языкToolStripMenuItem.Text = "Язык";
+            темаToolStripMenuItem.Text = "Тема";
+            светлаяToolStripMenuItem.Text = "Светлая";
+            темнаяToolStripMenuItem.Text = "Темная";
+
+            оПрограммеToolStripMenuItem.Text = "О программе";
+            message = "Kalashnikov Group Information System, 2024 г.\nВерсия: 1.2.0v\nАвторы: Мусатов И., Столяров А., Ломакин Е.";
+            caption = "О программе";
+        }
+
         private void button_dowload_Click(object sender, EventArgs e)
         {
             //Отчищаем таблицу
@@ -241,9 +293,22 @@ namespace InfoSystemVersions
             DeleteData();
         }
 
+        string message = "Kalashnikov Information System, 2024 г.\nВерсия: 1.2.0v\nАвторы: Мусатов И., Столяров А., Ломакин Е.";
+        string caption = "О программе";
+
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Информационная система", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void русскийToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetLocalizationRussia();
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetLocalizationEnglish();
         }
     }
 }
